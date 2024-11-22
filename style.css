@@ -1,0 +1,114 @@
+.header {
+    background-color: orangered;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header nav ul li {
+    display: inline;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.header nav ul li a:hover {
+    background-color: rgb(182, 0, 0);
+    color: #ffffff;
+}
+
+
+
+.footer {
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+/* Carousel container */
+#carouselExample {
+    margin: 30px auto;
+    width: 80%; /* Adjust carousel width */
+    max-width: 1200px; /* Max width for the carousel */
+    height: 500px; /* Set a fixed height for the carousel */
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Carousel images */
+.carousel-inner .carousel-item img {
+    width: 80%; /* Resize image width to 80% of the carousel container */
+    height: 50%; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits the container without stretching */
+    margin: 0 auto; /* Center the image */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation buttons (previous & next) */
+.carousel-control-prev, .carousel-control-next {
+    background: none; /* Remove any background */
+    border: none; /* Remove border */
+    color: red; /* Set text color for arrows */
+    font-size: 36px; /* Increase font size for arrows */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Left button (previous) */
+.carousel-control-prev {
+    left: 10px;
+}
+
+/* Right button (next) */
+.carousel-control-next {
+    right: 10px;
+}
+
+/* Dots for carousel indicators */
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.carousel-indicators li {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators .active {
+    background-color: #ff6347; /* Tomato color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #carouselExample {
+        width: 100%; /* Make carousel full width on smaller screens */
+        height: 300px; /* Adjust height for small screens */
+    }
+
+    .carousel-inner .carousel-item img {
+        width: 80%; /* Resize images slightly larger on smaller screens */
+        height: auto; /* Keep aspect ratio */
+    }
+}
